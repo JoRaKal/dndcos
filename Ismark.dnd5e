@@ -1,0 +1,204 @@
+{
+  "NPC": false,
+  "hp": "58",
+  "ac": "17",
+  "speed": "30",
+  "str": "16",
+  "dex": "13",
+  "con": "14",
+  "Int": "10",
+  "wis": "11",
+  "cha": "10",
+  "attacks": [
+    {
+      "name": "Longsword",
+      "type": "Melee",
+      "range": "5/5",
+      "roll": "1D20+5",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "ex_SLASHING",
+      "link": {
+        "name": "Longsword",
+        "type": "slashing",
+        "roll": "1d8+3"
+      }
+    },
+    {
+      "name": "Longsword (two hand)",
+      "type": "Melee",
+      "range": "5/5",
+      "roll": "1D20+5",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "ex_SLASHING",
+      "link": {
+        "name": "Longsword",
+        "type": "slashing",
+        "roll": "1d10+3"
+      }
+    },
+    {
+      "name": "Shortsword",
+      "type": "Melee",
+      "range": "5/5",
+      "roll": "1D20+5",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "e_SHORTSWORD",
+      "link": {
+        "name": "Shortsword",
+        "type": "piercing",
+        "roll": "1d6+3"
+      }
+    },
+    {
+      "name": "Heavy Crossbow",
+      "type": "Range",
+      "range": "100/400",
+      "roll": "1D20+3",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "e_CROSSBOW",
+      "link": {
+        "name": "Heavy Crossbow",
+        "type": "piercing",
+        "roll": "1d10+1"
+      }
+    }
+  ],
+  "attacksDC": [],
+  "healing": [],
+  "saves": [
+    {
+      "name": "STR",
+      "type": "Public",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "DEX",
+      "type": "Public",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "CON",
+      "type": "Public",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "INT",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "WIS",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "CHA",
+      "type": "Public",
+      "roll": "1D20+0"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Initiative",
+      "type": "Public",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Acrobatics",
+      "type": "Public",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Animal Handling",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Arcana",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Athletics",
+      "type": "Public",
+      "roll": "1D20+5"
+    },
+    {
+      "name": "Deception",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "History",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Insight",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Intimidation",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Investigation",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Medicine",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Nature",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Perception",
+      "type": "Public",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "Performance",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Persuasion",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Religion",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Sleight of Hand",
+      "type": "Public",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Stealth",
+      "type": "Public",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Survival",
+      "type": "Public",
+      "roll": "1D20+0"
+    }
+  ],
+  "resistance": [],
+  "vulnerability": [],
+  "immunity": []
+}
