@@ -1,0 +1,165 @@
+{
+  "NPC": true,
+  "hp": "112",
+  "ac": "17",
+  "speed": "30",
+  "str": "18",
+  "dex": "15",
+  "con": "16",
+  "Int": "16",
+  "wis": "14",
+  "cha": "16",
+  "attacks": [
+    {
+      "name": "Claw",
+      "type": "Range",
+      "range": "5/5",
+      "roll": "1D20+7",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "Range",
+      "link": {
+        "name": "Claw",
+        "type": "slashing",
+        "roll": "2d8+4"
+      }
+    }
+  ],
+  "attacksDC": [],
+  "healing": [],
+  "saves": [
+    {
+      "name": "STR",
+      "type": "Public",
+      "roll": "1D20+4"
+    },
+    {
+      "name": "DEX",
+      "type": "Public",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "CON",
+      "type": "Public",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "INT",
+      "type": "Public",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "WIS",
+      "type": "Public",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "CHA",
+      "type": "Public",
+      "roll": "1D20+3"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Initiative [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "Acrobatics [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "Animal Handling [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "Arcana [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Athletics [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+4"
+    },
+    {
+      "name": "Deception [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+6"
+    },
+    {
+      "name": "History [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Insight [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+5"
+    },
+    {
+      "name": "Intimidation [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Investigation [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Medicine [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "Nature [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Perception [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+5"
+    },
+    {
+      "name": "Performance [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Persuasion [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Religion [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Sleight of Hand [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "Stealth [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+5"
+    },
+    {
+      "name": "Survival [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+2"
+    }
+  ],
+  "resistance": [
+    "cold",
+    "fire"
+  ],
+  "vulnerability": [],
+  "immunity": []
+}
