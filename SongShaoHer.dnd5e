@@ -19,137 +19,89 @@
       "critrangemin": "20",
       "critmultip": "2",
       "range": "20/60",
+      "futureUse_icon": "e_Dagger",
       "link": {
         "name": "Dagger",
         "type": "piercing",
-        "roll": "1d4+5",
-        "info": "piercing or radiant"
+        "roll": "1d4+5"
       }
     },
     {
-      "name": "Dagger & Sneak Attack",
+      "name": "True Strike Staff",
       "type": "Melee",
-      "roll": "1D20+5",
+      "roll": "1D20+5+{pb}",
       "critrangemin": "20",
       "critmultip": "2",
       "range": "5/5",
+      "futureUse_icon": "ex_BLUDGEONING",
       "link": {
-        "name": "Dagger",
-        "type": "piercing",
-        "roll": "1d4+3",
-        "link": {
-          "name": "Sneak attack",
-          "type": "piercing",
-          "roll": "1d4+3+1d6"
-        }
+        "name": "Staff",
+        "type": "bludgeoning",
+        "roll": "1D8+5"
       }
     },
     {
-      "name": "Light Crossbow",
-      "type": "Range",
-      "roll": "1D20+5",
+      "name": "Bardic Unarmed Attack",
+      "type": "Melee",
+      "roll": "1D20+5+{pb}",
       "critrangemin": "20",
       "critmultip": "2",
-      "range": "80/320",
+      "range": "5/5",
+      "futureUse_icon": "e_SLAM",
       "link": {
-        "name": "Light Crossbow",
-        "type": "piercing",
-        "roll": "1d8+3"
-      }
-    },
-    {
-      "name": "Light Crossbow & Sneak Attack",
-      "type": "Range",
-      "roll": "1D20+5",
-      "critrangemin": "20",
-      "critmultip": "2",
-      "range": "80/320",
-      "link": {
-        "name": "Light Crossbow",
-        "type": "piercing",
-        "roll": "1d8+3",
-        "link": {
-          "name": "Sneak attack",
-          "type": "piercing",
-          "roll": "1d8+3+1d6"
-        }
-      }
-    },
-    {
-      "name": "Rat Dagger Flurry",
-      "type": "Range",
-      "roll": "1D20+5",
-      "critrangemin": "20",
-      "critmultip": "2",
-      "range": "20/60",
-      "link": {
-        "name": "Rat Dagger Flurry",
-        "type": "piercing",
-        "roll": "1d4+3"
-      }
-    },
-    {
-      "name": "Rat Dagger Flurry & Sneak Attack",
-      "type": "Range",
-      "roll": "1D20+5",
-      "critrangemin": "20",
-      "critmultip": "2",
-      "range": "20/60",
-      "link": {
-        "name": "Rat Dagger Flurry",
-        "type": "piercing",
-        "roll": "1d4+3",
-        "link": {
-          "name": "Sneak attack",
-          "type": "piercing",
-          "roll": "1d4+3+1d6"
-        }
+        "name": "Bardic Damage",
+        "type": "bludgeoning",
+        "roll": "1D6+3"
       }
     }
   ],
   "attacksDC": [
     {
-      "name": "Burning Hands",
+      "name": "Toll the Dead Healthy",
       "type": "Magic",
-      "roll": "17/DEX/half",
-      "range": "15/15",
-      "link": {
-        "name": "Burning Hands",
-        "type": "fire",
-        "roll": "3d6"
-      }
-    },
-    {
-      "name": "Create Bonfire",
-      "type": "Magic",
-      "roll": "17/DEX/zero",
+      "roll": "8+{pb}/WIS/zero",
       "range": "60/60",
+      "futureUse_icon": "ex_NECROTIC",
       "link": {
-        "name": "Create Bonfire",
-        "type": "fire",
-        "roll": "2d8"
+        "name": "Toll the Dead",
+        "type": "necrotic",
+        "roll": "1d8"
       }
     },
     {
-      "name": "Searing Smite",
+      "name": "Toll the Dead Injured",
       "type": "Magic",
-      "roll": "100",
-      "range": "120/120",
-      "link": {
-        "name": "Searing Smite",
-        "type": "fire",
-        "roll": "1d6"
-      }
-    },
-    {
-      "name": "Hold Person",
-      "type": "Magic",
-      "roll": "11/WIS/zero",
+      "roll": "8+{pb}/WIS/zero",
       "range": "60/60",
+      "futureUse_icon": "ex_NECROTIC",
       "link": {
-        "name": "Hold Person",
+        "name": "Toll the Dead",
+        "type": "necrotic",
+        "roll": "1d12"
+      }
+    },
+    {
+      "name": "Command",
+      "type": "Magic",
+      "roll": "8+{pb}/WIS/zero",
+      "range": "60/60",
+      "futureUse_icon": "ex_PSYCHIC",
+      "link": {
+        "name": "Command",
         "type": "",
         "roll": "0"
+      }
+    },
+    {
+      "name": "Shatter",
+      "type": "Magic",
+      "roll": "8+{pb}/CON/half",
+      "range": "60/60",
+      "futureUse_icon": "ex_THUNDER",
+      "link": {
+        "name": "Shatter",
+        "type": "thunder",
+        "roll": "3d8"
       }
     }
   ],
@@ -300,13 +252,19 @@
   "healing": [
     {
       "name": "Cure Wounds",
-      "type": "Spell",
-      "roll": "1D8+3",
+      "type": "Magic",
+      "roll": "2D8+5",
       "link": {
         "name": "Song Of Rest",
         "type": "Song",
         "roll": "1D6"
       }
+    },
+    {
+      "name": "Healing Word",
+      "type": "Magic",
+      "roll": "2D4+5",
+      "range": "60/60"
     }
   ],
   "resistance": [],
