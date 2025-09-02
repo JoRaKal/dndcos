@@ -1,0 +1,203 @@
+{
+  "NPC": true,
+  "hp": "26",
+  "ac": "11",
+  "speed": "20",
+  "str": "12",
+  "dex": "9",
+  "con": "15",
+  "Int": "9",
+  "wis": "10",
+  "cha": "6",
+  "attacks": [
+    {
+      "name": "Bite",
+      "type": "Melee",
+      "range": "5/5",
+      "roll": "1D20+3",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "e_BITE",
+      "link": {
+        "name": "Bite",
+        "type": "piercing",
+        "roll": "1d4+1"
+      }
+    },
+    {
+      "name": "Claw",
+      "type": "Melee",
+      "range": "5/5",
+      "roll": "1D20+3",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "e_CLAW",
+      "link": {
+        "name": "Claw",
+        "type": "slashing",
+        "roll": "1d4+1"
+      }
+    },
+    {
+      "name": "Dagger",
+      "type": "Range",
+      "range": "20/60",
+      "roll": "1D20+3",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "e_DAGGER",
+      "link": {
+        "name": "Dagger",
+        "type": "piercing",
+        "roll": "1d4+1"
+      }
+    }
+  ],
+  "attacksDC": [
+    {
+      "name": "Mimicry",
+      "type": "Magic",
+      "range": "120/120",
+      "roll": "12/INSIGHT/zero",
+      "futureUse_icon": "_Magic",
+      "link": {
+        "name": "Mimicry",
+        "type": "",
+        "roll": "0"
+      }
+    }
+  ],
+  "healing": [],
+  "saves": [
+    {
+      "name": "STR",
+      "type": "Public",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "DEX",
+      "type": "Public",
+      "roll": "1D20-1"
+    },
+    {
+      "name": "CON",
+      "type": "Public",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "INT",
+      "type": "Public",
+      "roll": "1D20-1"
+    },
+    {
+      "name": "WIS",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "CHA",
+      "type": "Public",
+      "roll": "1D20-2"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Initiative [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-1"
+    },
+    {
+      "name": "Acrobatics [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-1"
+    },
+    {
+      "name": "Animal Handling [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Arcana [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-1"
+    },
+    {
+      "name": "Athletics [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Deception [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "History [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-1"
+    },
+    {
+      "name": "Insight [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Intimidation [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-2"
+    },
+    {
+      "name": "Investigation [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-1"
+    },
+    {
+      "name": "Medicine [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Nature [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-1"
+    },
+    {
+      "name": "Perception [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "Performance [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-2"
+    },
+    {
+      "name": "Persuasion [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-2"
+    },
+    {
+      "name": "Religion [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-1"
+    },
+    {
+      "name": "Sleight of Hand [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-1"
+    },
+    {
+      "name": "Stealth [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Survival [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    }
+  ],
+  "resistance": [],
+  "vulnerability": [],
+  "immunity": []
+}

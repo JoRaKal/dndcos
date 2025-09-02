@@ -1,0 +1,194 @@
+{
+  "NPC": true,
+  "hp": "44",
+  "ac": "13",
+  "speed": "30",
+  "str": "10",
+  "dex": "12",
+  "con": "13",
+  "Int": "12",
+  "wis": "16",
+  "cha": "11",
+  "attacks": [
+    {
+      "name": "Vine Staff",
+      "type": "Range",
+      "range": "5/5",
+      "roll": "1D20+5",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "Range",
+      "link": {
+        "name": "Vine Staff",
+        "type": "bludgeoning",
+        "roll": "1d8+3",
+        "link": {
+          "name": "Vine Staff",
+          "type": "poison",
+          "roll": "1d4"
+        }
+      }
+    },
+    {
+      "name": "Verdant Wisp",
+      "type": "Range",
+      "range": "90/90",
+      "roll": "1D20+5",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "Range",
+      "link": {
+        "name": "Verdant Wisp",
+        "type": "radiant",
+        "roll": "3d6"
+      }
+    }
+  ],
+  "attacksDC": [
+    {
+      "name": "Thunderwave",
+      "type": "Magic",
+      "range": "15/15",
+      "roll": "13/CON/half",
+      "futureUse_icon": "ex_THUNDER",
+      "link": {
+        "name": "Thunderwave",
+        "type": "thunder",
+        "roll": "2d8"
+      }
+    }
+  ],
+  "healing": [],
+  "saves": [
+    {
+      "name": "STR",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "DEX",
+      "type": "Public",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "CON",
+      "type": "Public",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "INT",
+      "type": "Public",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "WIS",
+      "type": "Public",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "CHA",
+      "type": "Public",
+      "roll": "1D20+0"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Initiative [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Acrobatics [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Animal Handling [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Arcana [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Athletics [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Deception [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "History [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Insight [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Intimidation [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Investigation [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Medicine [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+5"
+    },
+    {
+      "name": "Nature [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Perception [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+5"
+    },
+    {
+      "name": "Performance [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Persuasion [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Religion [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Sleight of Hand [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Stealth [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Survival [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    }
+  ],
+  "resistance": [],
+  "vulnerability": [],
+  "immunity": []
+}

@@ -1,0 +1,210 @@
+{
+  "NPC": true,
+  "hp": "99",
+  "ac": "17",
+  "speed": "30",
+  "str": "11",
+  "dex": "16",
+  "con": "16",
+  "Int": "20",
+  "wis": "14",
+  "cha": "16",
+  "attacks": [
+    {
+      "name": "Paralyzing Touch",
+      "type": "Magic",
+      "range": "5/5",
+      "roll": "1D20+12",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "ex_COLD",
+      "link": {
+        "name": "Paralyzing Touch",
+        "type": "cold",
+        "roll": "3d6"
+      }
+    }
+  ],
+  "attacksDC": [
+    {
+      "name": "Paralyzing Touch (saving)",
+      "type": "Magic",
+      "range": "5/5",
+      "roll": "18/CON/zero",
+      "conditions": "paralyzed",
+      "futureUse_icon": "_Magic",
+      "link": {
+        "name": "Paralyzing Touch",
+        "type": "",
+        "roll": "0"
+      }
+    },
+    {
+      "name": "Frightening Gaze",
+      "type": "Magic",
+      "range": "10/10",
+      "roll": "18/WIS/zero",
+      "conditions": "frightened",
+      "futureUse_icon": "_Magic",
+      "link": {
+        "name": "Frightening Gaze",
+        "type": "",
+        "roll": "0"
+      }
+    },
+    {
+      "name": "Disrupt Life",
+      "type": "Magic",
+      "range": "20/20",
+      "roll": "18/CON/half",
+      "futureUse_icon": "ex_NECROTIC",
+      "link": {
+        "name": "Disrupt Life",
+        "type": "necrotic",
+        "roll": "6d6"
+      }
+    }
+  ],
+  "healing": [],
+  "saves": [
+    {
+      "name": "STR",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "DEX",
+      "type": "Public",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "CON",
+      "type": "Public",
+      "roll": "1D20+10"
+    },
+    {
+      "name": "INT",
+      "type": "Public",
+      "roll": "1D20+12"
+    },
+    {
+      "name": "WIS",
+      "type": "Public",
+      "roll": "1D20+9"
+    },
+    {
+      "name": "CHA",
+      "type": "Public",
+      "roll": "1D20+3"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Initiative [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Acrobatics [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Animal Handling [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "Arcana [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+19"
+    },
+    {
+      "name": "Athletics [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Deception [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "History [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+12"
+    },
+    {
+      "name": "Insight [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+9"
+    },
+    {
+      "name": "Intimidation [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Investigation [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+5"
+    },
+    {
+      "name": "Medicine [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "Nature [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+5"
+    },
+    {
+      "name": "Perception [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+9"
+    },
+    {
+      "name": "Performance [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Persuasion [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Religion [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+5"
+    },
+    {
+      "name": "Sleight of Hand [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Stealth [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Survival [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+2"
+    }
+  ],
+  "resistance": [
+    "cold",
+    "lightning",
+    "necrotic"
+  ],
+  "vulnerability": [],
+  "immunity": [
+    "poison",
+    "bludgeoning",
+    "piercing",
+    "slashing"
+  ]
+}

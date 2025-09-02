@@ -1,0 +1,189 @@
+{
+  "NPC": true,
+  "hp": "97",
+  "ac": "16",
+  "speed": "30",
+  "str": "11",
+  "dex": "18",
+  "con": "14",
+  "Int": "16",
+  "wis": "11",
+  "cha": "10",
+  "attacks": [
+    {
+      "name": "Shortsword",
+      "type": "Range",
+      "range": "5/5",
+      "roll": "1D20+7",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "conditions": "poisoned|xphb",
+      "futureUse_icon": "e_SHORTSWORD",
+      "link": {
+        "name": "Shortsword",
+        "type": "piercing",
+        "roll": "1d6+4",
+        "link": {
+          "name": "Shortsword",
+          "type": "poison",
+          "roll": "5d6"
+        }
+      }
+    },
+    {
+      "name": "Light Crossbow",
+      "type": "Range",
+      "range": "80/320",
+      "roll": "1D20+7",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "e_CROSSBOW",
+      "link": {
+        "name": "Light Crossbow",
+        "type": "piercing",
+        "roll": "1d8+4",
+        "link": {
+          "name": "Light Crossbow",
+          "type": "poison",
+          "roll": "6d6"
+        }
+      }
+    }
+  ],
+  "attacksDC": [],
+  "healing": [],
+  "saves": [
+    {
+      "name": "STR",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "DEX",
+      "type": "Public",
+      "roll": "1D20+7"
+    },
+    {
+      "name": "CON",
+      "type": "Public",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "INT",
+      "type": "Public",
+      "roll": "1D20+6"
+    },
+    {
+      "name": "WIS",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "CHA",
+      "type": "Public",
+      "roll": "1D20+0"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Initiative [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+4"
+    },
+    {
+      "name": "Acrobatics [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+7"
+    },
+    {
+      "name": "Animal Handling [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Arcana [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Athletics [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Deception [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "History [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Insight [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Intimidation [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Investigation [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Medicine [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Nature [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Perception [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+6"
+    },
+    {
+      "name": "Performance [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Persuasion [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Religion [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Sleight of Hand [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+4"
+    },
+    {
+      "name": "Stealth [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+10"
+    },
+    {
+      "name": "Survival [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    }
+  ],
+  "resistance": [
+    "poison"
+  ],
+  "vulnerability": [],
+  "immunity": []
+}

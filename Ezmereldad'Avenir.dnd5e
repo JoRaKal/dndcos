@@ -1,0 +1,203 @@
+{
+  "NPC": true,
+  "hp": "82",
+  "ac": "17",
+  "speed": "30",
+  "str": "14",
+  "dex": "19",
+  "con": "16",
+  "Int": "16",
+  "wis": "11",
+  "cha": "17",
+  "attacks": [
+    {
+      "name": "Rapier +1",
+      "type": "Melee",
+      "range": "5/5",
+      "roll": "1D20+8",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "e_RAPIER",
+      "link": {
+        "name": "Rapier +1",
+        "type": "magic piercing",
+        "roll": "1d8+5"
+      }
+    },
+    {
+      "name": "Handaxe +1",
+      "type": "Range",
+      "range": "20/60",
+      "roll": "1D20+6",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "e_AXE",
+      "link": {
+        "name": "Handaxe +1",
+        "type": "magic slashing",
+        "roll": "1d6+3"
+      }
+    },
+    {
+      "name": "Silvered Shortsword",
+      "type": "Melee",
+      "range": "5/5",
+      "roll": "1D20+7",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "e_SHORTSWORD",
+      "link": {
+        "name": "Silvered Shortsword",
+        "type": "piercing",
+        "roll": "1d6+4"
+      }
+    }
+  ],
+  "attacksDC": [
+    {
+      "name": "Curse",
+      "type": "Magic",
+      "range": "30/30",
+      "roll": "14/WIS/zero",
+      "futureUse_icon": "ex_PSYCHIC",
+      "link": {
+        "name": "Curse",
+        "type": "psychic",
+        "roll": "3d6"
+      }
+    }
+  ],
+  "healing": [],
+  "saves": [
+    {
+      "name": "STR",
+      "type": "Public",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "DEX",
+      "type": "Public",
+      "roll": "1D20+4"
+    },
+    {
+      "name": "CON",
+      "type": "Public",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "INT",
+      "type": "Public",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "WIS",
+      "type": "Public",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "CHA",
+      "type": "Public",
+      "roll": "1D20+3"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Initiative [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+4"
+    },
+    {
+      "name": "Acrobatics [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+7"
+    },
+    {
+      "name": "Animal Handling [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Arcana [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+6"
+    },
+    {
+      "name": "Athletics [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "Deception [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+9"
+    },
+    {
+      "name": "History [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Insight [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Intimidation [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Investigation [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Medicine [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Nature [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Perception [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+6"
+    },
+    {
+      "name": "Performance [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+6"
+    },
+    {
+      "name": "Persuasion [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Religion [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Sleight of Hand [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+7"
+    },
+    {
+      "name": "Stealth [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+7"
+    },
+    {
+      "name": "Survival [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+6"
+    }
+  ],
+  "resistance": [],
+  "vulnerability": [],
+  "immunity": []
+}

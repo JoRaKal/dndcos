@@ -1,0 +1,189 @@
+{
+  "NPC": true,
+  "hp": "120",
+  "ac": "15",
+  "speed": "30",
+  "str": "18",
+  "dex": "10",
+  "con": "16",
+  "Int": "20",
+  "wis": "17",
+  "cha": "13",
+  "attacks": [
+    {
+      "name": "Quarterstaff",
+      "type": "Melee",
+      "range": "5/5",
+      "roll": "1D20+8",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "ex_BLUDGEONING",
+      "link": {
+        "name": "Quarterstaff",
+        "type": "bludgeoning",
+        "roll": "1d6+4"
+      }
+    },
+    {
+      "name": "Quarterstaff (two hand)",
+      "type": "Melee",
+      "range": "5/5",
+      "roll": "1D20+8",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "ex_BLUDGEONING",
+      "link": {
+        "name": "Quarterstaff",
+        "type": "bludgeoning",
+        "roll": "1d8+4"
+      }
+    }
+  ],
+  "attacksDC": [
+    {
+      "name": "Crown of Madness",
+      "type": "Magic",
+      "range": "120/120",
+      "roll": "17/WIS/zero",
+      "futureUse_icon": "_Magic",
+      "link": {
+        "name": "Crown of Madness",
+        "type": "",
+        "roll": "0"
+      }
+    }
+  ],
+  "healing": [],
+  "saves": [
+    {
+      "name": "STR",
+      "type": "Public",
+      "roll": "1D20+4"
+    },
+    {
+      "name": "DEX",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "CON",
+      "type": "Public",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "INT",
+      "type": "Public",
+      "roll": "1D20+5"
+    },
+    {
+      "name": "WIS",
+      "type": "Public",
+      "roll": "1D20+7"
+    },
+    {
+      "name": "CHA",
+      "type": "Public",
+      "roll": "1D20+1"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Initiative [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Acrobatics [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Animal Handling [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Arcana [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+13"
+    },
+    {
+      "name": "Athletics [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+4"
+    },
+    {
+      "name": "Deception [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "History [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+5"
+    },
+    {
+      "name": "Insight [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Intimidation [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Investigation [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+5"
+    },
+    {
+      "name": "Medicine [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Nature [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+5"
+    },
+    {
+      "name": "Perception [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Performance [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Persuasion [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Religion [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+13"
+    },
+    {
+      "name": "Sleight of Hand [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Stealth [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Survival [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    }
+  ],
+  "resistance": [],
+  "vulnerability": [],
+  "immunity": []
+}

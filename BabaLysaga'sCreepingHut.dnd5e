@@ -1,0 +1,179 @@
+{
+  "NPC": true,
+  "hp": "263",
+  "ac": "16",
+  "speed": "30",
+  "str": "26",
+  "dex": "7",
+  "con": "20",
+  "Int": "1",
+  "wis": "3",
+  "cha": "3",
+  "attacks": [
+    {
+      "name": "Root",
+      "type": "Melee",
+      "range": "60/60",
+      "roll": "1D20+12",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "ex_BLUDGEONING",
+      "link": {
+        "name": "Root",
+        "type": "bludgeoning",
+        "roll": "4d10+8"
+      }
+    },
+    {
+      "name": "Rock",
+      "type": "Range",
+      "range": "120/120",
+      "roll": "1D20+12",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "e_ROCK",
+      "link": {
+        "name": "Rock",
+        "type": "bludgeoning",
+        "roll": "3d8+8"
+      }
+    }
+  ],
+  "attacksDC": [],
+  "healing": [],
+  "saves": [
+    {
+      "name": "STR",
+      "type": "Public",
+      "roll": "1D20+8"
+    },
+    {
+      "name": "DEX",
+      "type": "Public",
+      "roll": "1D20-2"
+    },
+    {
+      "name": "CON",
+      "type": "Public",
+      "roll": "1D20+9"
+    },
+    {
+      "name": "INT",
+      "type": "Public",
+      "roll": "1D20-5"
+    },
+    {
+      "name": "WIS",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "CHA",
+      "type": "Public",
+      "roll": "1D20+0"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Initiative [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-2"
+    },
+    {
+      "name": "Acrobatics [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-2"
+    },
+    {
+      "name": "Animal Handling [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-4"
+    },
+    {
+      "name": "Arcana [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-5"
+    },
+    {
+      "name": "Athletics [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+8"
+    },
+    {
+      "name": "Deception [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-4"
+    },
+    {
+      "name": "History [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-5"
+    },
+    {
+      "name": "Insight [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-4"
+    },
+    {
+      "name": "Intimidation [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-4"
+    },
+    {
+      "name": "Investigation [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-5"
+    },
+    {
+      "name": "Medicine [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-4"
+    },
+    {
+      "name": "Nature [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-5"
+    },
+    {
+      "name": "Perception [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-4"
+    },
+    {
+      "name": "Performance [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-4"
+    },
+    {
+      "name": "Persuasion [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-4"
+    },
+    {
+      "name": "Religion [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-5"
+    },
+    {
+      "name": "Sleight of Hand [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-2"
+    },
+    {
+      "name": "Stealth [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-2"
+    },
+    {
+      "name": "Survival [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20-4"
+    }
+  ],
+  "resistance": [],
+  "vulnerability": [],
+  "immunity": [
+    "poison",
+    "psychic"
+  ]
+}

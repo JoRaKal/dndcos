@@ -1,0 +1,219 @@
+{
+  "NPC": true,
+  "hp": "82",
+  "ac": "15",
+  "speed": "30",
+  "str": "16",
+  "dex": "16",
+  "con": "16",
+  "Int": "11",
+  "wis": "10",
+  "cha": "12",
+  "attacks": [
+    {
+      "name": "Bite",
+      "type": "Melee",
+      "range": "5/5",
+      "roll": "1D20+6",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "conditions": "grappled|incapacitated|restrained",
+      "futureUse_icon": "e_BITE",
+      "link": {
+        "name": "Bite",
+        "type": "piercing",
+        "roll": "1d6+3",
+        "link": {
+          "name": "Bite",
+          "type": "necrotic",
+          "roll": "2d6"
+        }
+      }
+    },
+    {
+      "name": "Claws",
+      "type": "Melee",
+      "range": "5/5",
+      "roll": "1D20+6",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "e_CLAW",
+      "link": {
+        "name": "Claws",
+        "type": "slashing",
+        "roll": "2d4+3"
+      }
+    }
+  ],
+  "attacksDC": [
+    {
+      "name": "Claws (escape: athletics)",
+      "type": "Magic",
+      "range": "5/5",
+      "roll": "13/ATHLETICS/zero",
+      "futureUse_icon": "e_ESCAPE",
+      "link": {
+        "name": "Claws",
+        "type": "",
+        "roll": "0"
+      }
+    },
+    {
+      "name": "Claws (escape: acrobatics)",
+      "type": "Magic",
+      "range": "5/5",
+      "roll": "13/ACROBATICS/zero",
+      "futureUse_icon": "e_ESCAPE",
+      "link": {
+        "name": "Claws",
+        "type": "",
+        "roll": "0"
+      }
+    }
+  ],
+  "healing": [
+    {
+      "name": "Regeneration",
+      "type": "Magic",
+      "range": "1/1",
+      "roll": "10"
+    }
+  ],
+  "saves": [
+    {
+      "name": "STR",
+      "type": "Public",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "DEX",
+      "type": "Public",
+      "roll": "1D20+6"
+    },
+    {
+      "name": "CON",
+      "type": "Public",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "INT",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "WIS",
+      "type": "Public",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "CHA",
+      "type": "Public",
+      "roll": "1D20+1"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Initiative [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Acrobatics [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Animal Handling [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Arcana [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Athletics [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Deception [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "History [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Insight [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Intimidation [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Investigation [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Medicine [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Nature [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Perception [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Performance [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Persuasion [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Religion [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Sleight of Hand [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Stealth [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+6"
+    },
+    {
+      "name": "Survival [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    }
+  ],
+  "resistance": [
+    "necrotic",
+    "bludgeoning",
+    "piercing",
+    "slashing"
+  ],
+  "vulnerability": [],
+  "immunity": []
+}
