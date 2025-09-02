@@ -1,27 +1,27 @@
 {
   "NPC": true,
-  "hp": "112",
-  "ac": "17",
+  "hp": "14",
+  "ac": "15",
   "speed": "30",
-  "str": "18",
-  "dex": "15",
-  "con": "16",
-  "Int": "16",
+  "str": "11",
+  "dex": "12",
+  "con": "11",
+  "Int": "12",
   "wis": "14",
   "cha": "16",
   "attacks": [
     {
-      "name": "Claw",
-      "type": "Range",
+      "name": "Rapier",
+      "type": "Melee",
       "range": "5/5",
-      "roll": "1D20+7",
+      "roll": "1D20+3",
       "critrangemin": "20",
       "critmultip": "2",
-      "futureUse_icon": "Range",
+      "futureUse_icon": "e_RAPIER",
       "link": {
-        "name": "Claw",
-        "type": "slashing",
-        "roll": "2d8+4"
+        "name": "Rapier",
+        "type": "piercing",
+        "roll": "1d8+1"
       }
     }
   ],
@@ -31,22 +31,22 @@
     {
       "name": "STR",
       "type": "Public",
-      "roll": "1D20+4"
+      "roll": "1D20+0"
     },
     {
       "name": "DEX",
       "type": "Public",
-      "roll": "1D20+2"
+      "roll": "1D20+1"
     },
     {
       "name": "CON",
       "type": "Public",
-      "roll": "1D20+3"
+      "roll": "1D20+0"
     },
     {
       "name": "INT",
       "type": "Public",
-      "roll": "1D20+3"
+      "roll": "1D20+1"
     },
     {
       "name": "WIS",
@@ -63,12 +63,12 @@
     {
       "name": "Initiative [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+1"
     },
     {
       "name": "Acrobatics [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+1"
     },
     {
       "name": "Animal Handling [GM]",
@@ -78,27 +78,27 @@
     {
       "name": "Arcana [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+1"
     },
     {
       "name": "Athletics [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+4"
+      "roll": "1D20+0"
     },
     {
       "name": "Deception [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+6"
+      "roll": "1D20+5"
     },
     {
       "name": "History [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+1"
     },
     {
       "name": "Insight [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+4"
     },
     {
       "name": "Intimidation [GM]",
@@ -108,7 +108,7 @@
     {
       "name": "Investigation [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+1"
     },
     {
       "name": "Medicine [GM]",
@@ -118,12 +118,12 @@
     {
       "name": "Nature [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+1"
     },
     {
       "name": "Perception [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+2"
     },
     {
       "name": "Performance [GM]",
@@ -133,22 +133,22 @@
     {
       "name": "Persuasion [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+5"
     },
     {
       "name": "Religion [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+1"
     },
     {
       "name": "Sleight of Hand [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+1"
     },
     {
       "name": "Stealth [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+1"
     },
     {
       "name": "Survival [GM]",
@@ -156,10 +156,7 @@
       "roll": "1D20+2"
     }
   ],
-  "resistance": [
-    "cold",
-    "fire"
-  ],
+  "resistance": [],
   "vulnerability": [],
   "immunity": []
 }

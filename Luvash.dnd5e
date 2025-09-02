@@ -1,27 +1,41 @@
 {
   "NPC": true,
-  "hp": "112",
-  "ac": "17",
+  "hp": "65",
+  "ac": "15",
   "speed": "30",
-  "str": "18",
-  "dex": "15",
-  "con": "16",
-  "Int": "16",
-  "wis": "14",
-  "cha": "16",
+  "str": "15",
+  "dex": "16",
+  "con": "14",
+  "Int": "14",
+  "wis": "11",
+  "cha": "14",
   "attacks": [
     {
-      "name": "Claw",
-      "type": "Range",
+      "name": "Scimitar",
+      "type": "Melee",
       "range": "5/5",
-      "roll": "1D20+7",
+      "roll": "1D20+5",
       "critrangemin": "20",
       "critmultip": "2",
-      "futureUse_icon": "Range",
+      "futureUse_icon": "ex_SLASHING",
       "link": {
-        "name": "Claw",
+        "name": "Scimitar",
         "type": "slashing",
-        "roll": "2d8+4"
+        "roll": "1d6+3"
+      }
+    },
+    {
+      "name": "Dagger",
+      "type": "Range",
+      "range": "20/60",
+      "roll": "1D20+5",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "e_DAGGER",
+      "link": {
+        "name": "Dagger",
+        "type": "piercing",
+        "roll": "1d4+3"
       }
     }
   ],
@@ -36,17 +50,17 @@
     {
       "name": "DEX",
       "type": "Public",
-      "roll": "1D20+2"
+      "roll": "1D20+5"
     },
     {
       "name": "CON",
       "type": "Public",
-      "roll": "1D20+3"
+      "roll": "1D20+2"
     },
     {
       "name": "INT",
       "type": "Public",
-      "roll": "1D20+3"
+      "roll": "1D20+2"
     },
     {
       "name": "WIS",
@@ -56,29 +70,29 @@
     {
       "name": "CHA",
       "type": "Public",
-      "roll": "1D20+3"
+      "roll": "1D20+2"
     }
   ],
   "skills": [
     {
       "name": "Initiative [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+3"
     },
     {
       "name": "Acrobatics [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+3"
     },
     {
       "name": "Animal Handling [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+0"
     },
     {
       "name": "Arcana [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+2"
     },
     {
       "name": "Athletics [GM]",
@@ -88,78 +102,75 @@
     {
       "name": "Deception [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+6"
+      "roll": "1D20+4"
     },
     {
       "name": "History [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+2"
     },
     {
       "name": "Insight [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+0"
     },
     {
       "name": "Intimidation [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+2"
     },
     {
       "name": "Investigation [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+2"
     },
     {
       "name": "Medicine [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+0"
     },
     {
       "name": "Nature [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+2"
     },
     {
       "name": "Perception [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+0"
     },
     {
       "name": "Performance [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+2"
     },
     {
       "name": "Persuasion [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+2"
     },
     {
       "name": "Religion [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+2"
     },
     {
       "name": "Sleight of Hand [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+3"
     },
     {
       "name": "Stealth [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+3"
     },
     {
       "name": "Survival [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+0"
     }
   ],
-  "resistance": [
-    "cold",
-    "fire"
-  ],
+  "resistance": [],
   "vulnerability": [],
   "immunity": []
 }

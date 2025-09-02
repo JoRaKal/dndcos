@@ -1,47 +1,61 @@
 {
   "NPC": true,
-  "hp": "112",
-  "ac": "17",
-  "speed": "30",
-  "str": "18",
-  "dex": "15",
-  "con": "16",
-  "Int": "16",
-  "wis": "14",
-  "cha": "16",
+  "hp": "88",
+  "ac": "10",
+  "speed": "20",
+  "str": "8",
+  "dex": "11",
+  "con": "12",
+  "Int": "17",
+  "wis": "20",
+  "cha": "18",
   "attacks": [
     {
-      "name": "Claw",
-      "type": "Range",
+      "name": "Dagger",
+      "type": "Melee",
       "range": "5/5",
-      "roll": "1D20+7",
+      "roll": "1D20+4",
       "critrangemin": "20",
       "critmultip": "2",
-      "futureUse_icon": "Range",
+      "futureUse_icon": "e_DAGGER",
       "link": {
-        "name": "Claw",
-        "type": "slashing",
-        "roll": "2d8+4"
+        "name": "Dagger",
+        "type": "piercing",
+        "roll": "1d4"
       }
     }
   ],
-  "attacksDC": [],
+  "attacksDC": [
+    {
+      "name": "Curse",
+      "type": "Magic",
+      "range": "30/30",
+      "roll": "17/WIS/zero",
+      "conditions": "blinded|deafened",
+      "futureUse_icon": "ex_PSYCHIC",
+      "link": {
+        "name": "Curse",
+        "type": "psychic",
+        "roll": "5d6"
+      }
+    }
+  ],
   "healing": [],
   "saves": [
     {
       "name": "STR",
       "type": "Public",
-      "roll": "1D20+4"
+      "roll": "1D20-1"
     },
     {
       "name": "DEX",
       "type": "Public",
-      "roll": "1D20+2"
+      "roll": "1D20+0"
     },
     {
       "name": "CON",
       "type": "Public",
-      "roll": "1D20+3"
+      "roll": "1D20+5"
     },
     {
       "name": "INT",
@@ -51,44 +65,44 @@
     {
       "name": "WIS",
       "type": "Public",
-      "roll": "1D20+2"
+      "roll": "1D20+5"
     },
     {
       "name": "CHA",
       "type": "Public",
-      "roll": "1D20+3"
+      "roll": "1D20+4"
     }
   ],
   "skills": [
     {
       "name": "Initiative [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+0"
     },
     {
       "name": "Acrobatics [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+0"
     },
     {
       "name": "Animal Handling [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+5"
     },
     {
       "name": "Arcana [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+7"
     },
     {
       "name": "Athletics [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+4"
+      "roll": "1D20-1"
     },
     {
       "name": "Deception [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+6"
+      "roll": "1D20+8"
     },
     {
       "name": "History [GM]",
@@ -98,12 +112,12 @@
     {
       "name": "Insight [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+13"
     },
     {
       "name": "Intimidation [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+8"
     },
     {
       "name": "Investigation [GM]",
@@ -113,7 +127,7 @@
     {
       "name": "Medicine [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+5"
     },
     {
       "name": "Nature [GM]",
@@ -123,43 +137,40 @@
     {
       "name": "Perception [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+9"
     },
     {
       "name": "Performance [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+4"
     },
     {
       "name": "Persuasion [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+4"
     },
     {
       "name": "Religion [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+7"
     },
     {
       "name": "Sleight of Hand [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+0"
     },
     {
       "name": "Stealth [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+0"
     },
     {
       "name": "Survival [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+5"
     }
   ],
-  "resistance": [
-    "cold",
-    "fire"
-  ],
+  "resistance": [],
   "vulnerability": [],
   "immunity": []
 }

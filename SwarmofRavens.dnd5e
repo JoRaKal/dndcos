@@ -1,27 +1,41 @@
 {
   "NPC": true,
-  "hp": "112",
-  "ac": "17",
-  "speed": "30",
-  "str": "18",
-  "dex": "15",
-  "con": "16",
-  "Int": "16",
-  "wis": "14",
-  "cha": "16",
+  "hp": "11",
+  "ac": "12",
+  "speed": "10",
+  "str": "6",
+  "dex": "14",
+  "con": "12",
+  "Int": "5",
+  "wis": "12",
+  "cha": "6",
   "attacks": [
     {
-      "name": "Claw",
+      "name": "Beaks",
       "type": "Range",
       "range": "5/5",
-      "roll": "1D20+7",
+      "roll": "1D20+4",
       "critrangemin": "20",
       "critmultip": "2",
       "futureUse_icon": "Range",
       "link": {
-        "name": "Claw",
-        "type": "slashing",
-        "roll": "2d8+4"
+        "name": "Beaks",
+        "type": "piercing",
+        "roll": "1d6+2"
+      }
+    },
+    {
+      "name": "Beaks (while condition)",
+      "type": "Range",
+      "range": "5/5",
+      "roll": "1D20+4",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "Range",
+      "link": {
+        "name": "Beaks",
+        "type": "piercing",
+        "roll": "1d4"
       }
     }
   ],
@@ -31,7 +45,7 @@
     {
       "name": "STR",
       "type": "Public",
-      "roll": "1D20+4"
+      "roll": "1D20-2"
     },
     {
       "name": "DEX",
@@ -41,22 +55,22 @@
     {
       "name": "CON",
       "type": "Public",
-      "roll": "1D20+3"
+      "roll": "1D20+1"
     },
     {
       "name": "INT",
       "type": "Public",
-      "roll": "1D20+3"
+      "roll": "1D20-3"
     },
     {
       "name": "WIS",
       "type": "Public",
-      "roll": "1D20+2"
+      "roll": "1D20+1"
     },
     {
       "name": "CHA",
       "type": "Public",
-      "roll": "1D20+3"
+      "roll": "1D20-2"
     }
   ],
   "skills": [
@@ -73,52 +87,52 @@
     {
       "name": "Animal Handling [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+1"
     },
     {
       "name": "Arcana [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20-3"
     },
     {
       "name": "Athletics [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+4"
+      "roll": "1D20-2"
     },
     {
       "name": "Deception [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+6"
+      "roll": "1D20-2"
     },
     {
       "name": "History [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20-3"
     },
     {
       "name": "Insight [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+1"
     },
     {
       "name": "Intimidation [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20-2"
     },
     {
       "name": "Investigation [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20-3"
     },
     {
       "name": "Medicine [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+1"
     },
     {
       "name": "Nature [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20-3"
     },
     {
       "name": "Perception [GM]",
@@ -128,17 +142,17 @@
     {
       "name": "Performance [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20-2"
     },
     {
       "name": "Persuasion [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20-2"
     },
     {
       "name": "Religion [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20-3"
     },
     {
       "name": "Sleight of Hand [GM]",
@@ -148,17 +162,21 @@
     {
       "name": "Stealth [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+2"
     },
     {
       "name": "Survival [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+1"
     }
   ],
   "resistance": [
-    "cold",
-    "fire"
+    "magic bludgeoning",
+    "bludgeoning",
+    "magic piercing",
+    "piercing",
+    "magic slashing",
+    "slashing"
   ],
   "vulnerability": [],
   "immunity": []

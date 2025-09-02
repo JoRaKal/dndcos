@@ -1,62 +1,104 @@
 {
   "NPC": true,
   "hp": "112",
-  "ac": "17",
+  "ac": "14",
   "speed": "30",
   "str": "18",
   "dex": "15",
   "con": "16",
-  "Int": "16",
-  "wis": "14",
-  "cha": "16",
+  "Int": "6",
+  "wis": "12",
+  "cha": "15",
   "attacks": [
     {
-      "name": "Claw",
+      "name": "Spear",
       "type": "Range",
-      "range": "5/5",
+      "range": "20/60",
       "roll": "1D20+7",
       "critrangemin": "20",
       "critmultip": "2",
       "futureUse_icon": "Range",
       "link": {
-        "name": "Claw",
-        "type": "slashing",
+        "name": "Spear",
+        "type": "piercing",
+        "roll": "2d6+4"
+      }
+    },
+    {
+      "name": "Spear (melee)",
+      "type": "Melee",
+      "range": "20/60",
+      "roll": "1D20+7",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "ex_PIERCING",
+      "link": {
+        "name": "Spear",
+        "type": "piercing",
         "roll": "2d8+4"
+      }
+    },
+    {
+      "name": "Shield Bash",
+      "type": "Melee",
+      "range": "5/5",
+      "roll": "1D20+7",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "ex_BLUDGEONING",
+      "link": {
+        "name": "Shield Bash",
+        "type": "bludgeoning",
+        "roll": "2d4+4"
       }
     }
   ],
-  "attacksDC": [],
+  "attacksDC": [
+    {
+      "name": "Shield Bash (saving)",
+      "type": "Magic",
+      "range": "5/5",
+      "roll": "15/STR/zero",
+      "conditions": "prone",
+      "futureUse_icon": "_Magic",
+      "link": {
+        "name": "Shield Bash",
+        "type": "",
+        "roll": "0"
+      }
+    }
+  ],
   "healing": [],
   "saves": [
     {
       "name": "STR",
       "type": "Public",
-      "roll": "1D20+4"
+      "roll": "1D20+7"
     },
     {
       "name": "DEX",
       "type": "Public",
-      "roll": "1D20+2"
+      "roll": "1D20+5"
     },
     {
       "name": "CON",
       "type": "Public",
-      "roll": "1D20+3"
+      "roll": "1D20+6"
     },
     {
       "name": "INT",
       "type": "Public",
-      "roll": "1D20+3"
+      "roll": "1D20-2"
     },
     {
       "name": "WIS",
       "type": "Public",
-      "roll": "1D20+2"
+      "roll": "1D20+1"
     },
     {
       "name": "CHA",
       "type": "Public",
-      "roll": "1D20+3"
+      "roll": "1D20+2"
     }
   ],
   "skills": [
@@ -73,72 +115,72 @@
     {
       "name": "Animal Handling [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+1"
     },
     {
       "name": "Arcana [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20-2"
     },
     {
       "name": "Athletics [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+4"
+      "roll": "1D20+10"
     },
     {
       "name": "Deception [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+6"
+      "roll": "1D20+2"
     },
     {
       "name": "History [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20-2"
     },
     {
       "name": "Insight [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+1"
     },
     {
       "name": "Intimidation [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+5"
     },
     {
       "name": "Investigation [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20-2"
     },
     {
       "name": "Medicine [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+1"
     },
     {
       "name": "Nature [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20-2"
     },
     {
       "name": "Perception [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+1"
     },
     {
       "name": "Performance [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+2"
     },
     {
       "name": "Persuasion [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+2"
     },
     {
       "name": "Religion [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20-2"
     },
     {
       "name": "Sleight of Hand [GM]",
@@ -148,18 +190,15 @@
     {
       "name": "Stealth [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+2"
     },
     {
       "name": "Survival [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+1"
     }
   ],
-  "resistance": [
-    "cold",
-    "fire"
-  ],
+  "resistance": [],
   "vulnerability": [],
   "immunity": []
 }

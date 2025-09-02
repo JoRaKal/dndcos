@@ -11,15 +11,15 @@
   "cha": "16",
   "attacks": [
     {
-      "name": "Claw",
-      "type": "Range",
+      "name": "Claws",
+      "type": "Melee",
       "range": "5/5",
       "roll": "1D20+7",
       "critrangemin": "20",
       "critmultip": "2",
-      "futureUse_icon": "Range",
+      "futureUse_icon": "e_CLAW",
       "link": {
-        "name": "Claw",
+        "name": "Claws",
         "type": "slashing",
         "roll": "2d8+4"
       }
@@ -158,7 +158,10 @@
   ],
   "resistance": [
     "cold",
-    "fire"
+    "fire",
+    "bludgeoning",
+    "piercing",
+    "slashing"
   ],
   "vulnerability": [],
   "immunity": []

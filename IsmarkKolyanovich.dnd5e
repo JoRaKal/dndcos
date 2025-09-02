@@ -1,27 +1,69 @@
 {
   "NPC": true,
-  "hp": "112",
+  "hp": "58",
   "ac": "17",
   "speed": "30",
-  "str": "18",
-  "dex": "15",
-  "con": "16",
-  "Int": "16",
-  "wis": "14",
-  "cha": "16",
+  "str": "16",
+  "dex": "13",
+  "con": "14",
+  "Int": "10",
+  "wis": "11",
+  "cha": "10",
   "attacks": [
     {
-      "name": "Claw",
-      "type": "Range",
+      "name": "Longsword",
+      "type": "Melee",
       "range": "5/5",
-      "roll": "1D20+7",
+      "roll": "1D20+5",
       "critrangemin": "20",
       "critmultip": "2",
-      "futureUse_icon": "Range",
+      "futureUse_icon": "ex_SLASHING",
       "link": {
-        "name": "Claw",
+        "name": "Longsword",
         "type": "slashing",
-        "roll": "2d8+4"
+        "roll": "1d8+3"
+      }
+    },
+    {
+      "name": "Longsword (two hand)",
+      "type": "Melee",
+      "range": "5/5",
+      "roll": "1D20+5",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "ex_SLASHING",
+      "link": {
+        "name": "Longsword",
+        "type": "slashing",
+        "roll": "1d10+3"
+      }
+    },
+    {
+      "name": "Shortsword",
+      "type": "Melee",
+      "range": "5/5",
+      "roll": "1D20+5",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "e_SHORTSWORD",
+      "link": {
+        "name": "Shortsword",
+        "type": "piercing",
+        "roll": "1d6+3"
+      }
+    },
+    {
+      "name": "Heavy Crossbow",
+      "type": "Range",
+      "range": "100/400",
+      "roll": "1D20+3",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "e_CROSSBOW",
+      "link": {
+        "name": "Heavy Crossbow",
+        "type": "piercing",
+        "roll": "1d10+1"
       }
     }
   ],
@@ -31,135 +73,132 @@
     {
       "name": "STR",
       "type": "Public",
-      "roll": "1D20+4"
+      "roll": "1D20+3"
     },
     {
       "name": "DEX",
       "type": "Public",
-      "roll": "1D20+2"
+      "roll": "1D20+1"
     },
     {
       "name": "CON",
       "type": "Public",
-      "roll": "1D20+3"
+      "roll": "1D20+2"
     },
     {
       "name": "INT",
       "type": "Public",
-      "roll": "1D20+3"
+      "roll": "1D20+0"
     },
     {
       "name": "WIS",
       "type": "Public",
-      "roll": "1D20+2"
+      "roll": "1D20+0"
     },
     {
       "name": "CHA",
       "type": "Public",
-      "roll": "1D20+3"
+      "roll": "1D20+0"
     }
   ],
   "skills": [
     {
       "name": "Initiative [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+1"
     },
     {
       "name": "Acrobatics [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+1"
     },
     {
       "name": "Animal Handling [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+0"
     },
     {
       "name": "Arcana [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+0"
     },
     {
       "name": "Athletics [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+4"
+      "roll": "1D20+5"
     },
     {
       "name": "Deception [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+6"
+      "roll": "1D20+0"
     },
     {
       "name": "History [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+0"
     },
     {
       "name": "Insight [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+0"
     },
     {
       "name": "Intimidation [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+0"
     },
     {
       "name": "Investigation [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+0"
     },
     {
       "name": "Medicine [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+0"
     },
     {
       "name": "Nature [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+0"
     },
     {
       "name": "Perception [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+2"
     },
     {
       "name": "Performance [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+0"
     },
     {
       "name": "Persuasion [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+0"
     },
     {
       "name": "Religion [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+0"
     },
     {
       "name": "Sleight of Hand [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+1"
     },
     {
       "name": "Stealth [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+1"
     },
     {
       "name": "Survival [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+0"
     }
   ],
-  "resistance": [
-    "cold",
-    "fire"
-  ],
+  "resistance": [],
   "vulnerability": [],
   "immunity": []
 }

@@ -1,37 +1,62 @@
 {
   "NPC": true,
-  "hp": "112",
-  "ac": "17",
-  "speed": "30",
-  "str": "18",
-  "dex": "15",
-  "con": "16",
-  "Int": "16",
-  "wis": "14",
-  "cha": "16",
+  "hp": "22",
+  "ac": "12",
+  "speed": "0",
+  "str": "1",
+  "dex": "14",
+  "con": "11",
+  "Int": "10",
+  "wis": "10",
+  "cha": "11",
   "attacks": [
     {
-      "name": "Claw",
-      "type": "Range",
+      "name": "Life Drain",
+      "type": "Magic",
       "range": "5/5",
-      "roll": "1D20+7",
+      "roll": "1D20+4",
       "critrangemin": "20",
       "critmultip": "2",
-      "futureUse_icon": "Range",
+      "futureUse_icon": "ex_COLD",
       "link": {
-        "name": "Claw",
-        "type": "slashing",
-        "roll": "2d8+4"
+        "name": "Life Drain",
+        "type": "cold",
+        "roll": "3d6"
       }
     }
   ],
-  "attacksDC": [],
+  "attacksDC": [
+    {
+      "name": "Life Drain (saving)",
+      "type": "Magic",
+      "range": "5/5",
+      "roll": "10/CON/zero",
+      "futureUse_icon": "_Magic",
+      "link": {
+        "name": "Life Drain",
+        "type": "",
+        "roll": "0"
+      }
+    },
+    {
+      "name": "Incorporeal Movement",
+      "type": "Magic",
+      "range": "120/120",
+      "roll": "100",
+      "futureUse_icon": "ex_FORCE",
+      "link": {
+        "name": "Incorporeal Movement",
+        "type": "force",
+        "roll": "1d10"
+      }
+    }
+  ],
   "healing": [],
   "saves": [
     {
       "name": "STR",
       "type": "Public",
-      "roll": "1D20+4"
+      "roll": "1D20-5"
     },
     {
       "name": "DEX",
@@ -41,22 +66,22 @@
     {
       "name": "CON",
       "type": "Public",
-      "roll": "1D20+3"
+      "roll": "1D20+0"
     },
     {
       "name": "INT",
       "type": "Public",
-      "roll": "1D20+3"
+      "roll": "1D20+0"
     },
     {
       "name": "WIS",
       "type": "Public",
-      "roll": "1D20+2"
+      "roll": "1D20+0"
     },
     {
       "name": "CHA",
       "type": "Public",
-      "roll": "1D20+3"
+      "roll": "1D20+0"
     }
   ],
   "skills": [
@@ -73,72 +98,72 @@
     {
       "name": "Animal Handling [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+0"
     },
     {
       "name": "Arcana [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+0"
     },
     {
       "name": "Athletics [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+4"
+      "roll": "1D20-5"
     },
     {
       "name": "Deception [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+6"
+      "roll": "1D20+0"
     },
     {
       "name": "History [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+0"
     },
     {
       "name": "Insight [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+0"
     },
     {
       "name": "Intimidation [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+0"
     },
     {
       "name": "Investigation [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+0"
     },
     {
       "name": "Medicine [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+0"
     },
     {
       "name": "Nature [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+0"
     },
     {
       "name": "Perception [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+0"
     },
     {
       "name": "Performance [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+0"
     },
     {
       "name": "Persuasion [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+0"
     },
     {
       "name": "Religion [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+0"
     },
     {
       "name": "Sleight of Hand [GM]",
@@ -148,18 +173,27 @@
     {
       "name": "Stealth [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+2"
     },
     {
       "name": "Survival [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+0"
     }
   ],
   "resistance": [
-    "cold",
-    "fire"
+    "acid",
+    "fire",
+    "lightning",
+    "thunder",
+    "bludgeoning",
+    "piercing",
+    "slashing"
   ],
   "vulnerability": [],
-  "immunity": []
+  "immunity": [
+    "cold",
+    "necrotic",
+    "poison"
+  ]
 }

@@ -1,0 +1,258 @@
+{
+  "NPC": true,
+  "hp": "27",
+  "ac": "12",
+  "speed": "30",
+  "str": "10",
+  "dex": "15",
+  "con": "10",
+  "Int": "12",
+  "wis": "14",
+  "cha": "16",
+  "attacks": [
+    {
+      "name": "Shortsword",
+      "type": "Melee",
+      "range": "5/5",
+      "roll": "1D20+4",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "e_SHORTSWORD",
+      "link": {
+        "name": "Shortsword",
+        "type": "piercing",
+        "roll": "1d6+2"
+      }
+    },
+    {
+      "name": "Hand Crossbow",
+      "type": "Range",
+      "range": "30/120",
+      "roll": "1D20+4",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "e_CROSSBOW",
+      "link": {
+        "name": "Hand Crossbow",
+        "type": "piercing",
+        "roll": "1d6+2"
+      }
+    },
+    {
+      "name": "Shortsword (with sneak attack)",
+      "type": "Melee",
+      "range": "5/5",
+      "roll": "1D20+4",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "e_SHORTSWORD",
+      "link": {
+        "name": "Shortsword",
+        "type": "piercing",
+        "roll": "1d6+2",
+        "link": {
+          "name": "Sneak Attack",
+          "type": "piercing",
+          "roll": "2d6"
+        }
+      }
+    },
+    {
+      "name": "Hand Crossbow (with sneak attack)",
+      "type": "Range",
+      "range": "30/120",
+      "roll": "1D20+4",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "futureUse_icon": "e_CROSSBOW",
+      "link": {
+        "name": "Hand Crossbow",
+        "type": "piercing",
+        "roll": "1d6+2",
+        "link": {
+          "name": "Sneak Attack",
+          "type": "piercing",
+          "roll": "2d6"
+        }
+      }
+    }
+  ],
+  "attacksDC": [
+    {
+      "name": "Curse",
+      "type": "Magic",
+      "range": "30/30",
+      "roll": "13/WIS/zero",
+      "conditions": "blinded|deafened",
+      "futureUse_icon": "ex_PSYCHIC",
+      "link": {
+        "name": "Curse",
+        "type": "psychic",
+        "roll": "1d6",
+        "link": {
+          "name": "Curse",
+          "type": "psychic",
+          "roll": "1d6",
+          "link": {
+            "name": "Curse",
+            "type": "psychic",
+            "roll": "1d6",
+            "link": {
+              "name": "Curse",
+              "type": "psychic",
+              "roll": "3d6",
+              "link": {
+                "name": "Curse",
+                "type": "psychic",
+                "roll": "3d6",
+                "link": {
+                  "name": "Curse",
+                  "type": "psychic",
+                  "roll": "5d6",
+                  "link": {
+                    "name": "Curse",
+                    "type": "psychic",
+                    "roll": "5d6"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "healing": [],
+  "saves": [
+    {
+      "name": "STR",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "DEX",
+      "type": "Public",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "CON",
+      "type": "Public",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "INT",
+      "type": "Public",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "WIS",
+      "type": "Public",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "CHA",
+      "type": "Public",
+      "roll": "1D20+3"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Initiative [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "Acrobatics [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "Animal Handling [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "Arcana [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Athletics [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+0"
+    },
+    {
+      "name": "Deception [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+5"
+    },
+    {
+      "name": "History [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Insight [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+4"
+    },
+    {
+      "name": "Intimidation [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Investigation [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+5"
+    },
+    {
+      "name": "Medicine [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+2"
+    },
+    {
+      "name": "Nature [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Perception [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+6"
+    },
+    {
+      "name": "Performance [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+3"
+    },
+    {
+      "name": "Persuasion [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+5"
+    },
+    {
+      "name": "Religion [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+1"
+    },
+    {
+      "name": "Sleight of Hand [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+4"
+    },
+    {
+      "name": "Stealth [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+4"
+    },
+    {
+      "name": "Survival [GM]",
+      "type": "Secret,GM",
+      "roll": "1D20+2"
+    }
+  ],
+  "resistance": [],
+  "vulnerability": [],
+  "immunity": []
+}

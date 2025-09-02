@@ -1,32 +1,57 @@
 {
   "NPC": true,
-  "hp": "112",
+  "hp": "136",
   "ac": "17",
   "speed": "30",
   "str": "18",
-  "dex": "15",
-  "con": "16",
-  "Int": "16",
-  "wis": "14",
-  "cha": "16",
+  "dex": "18",
+  "con": "18",
+  "Int": "17",
+  "wis": "20",
+  "cha": "20",
   "attacks": [
     {
-      "name": "Claw",
-      "type": "Range",
+      "name": "Mace",
+      "type": "Melee",
       "range": "5/5",
-      "roll": "1D20+7",
+      "roll": "1D20+8",
       "critrangemin": "20",
       "critmultip": "2",
-      "futureUse_icon": "Range",
+      "futureUse_icon": "ex_M_BLUDGEONING",
       "link": {
-        "name": "Claw",
-        "type": "slashing",
-        "roll": "2d8+4"
+        "name": "Mace",
+        "type": "magic bludgeoning",
+        "roll": "1d6+4",
+        "link": {
+          "name": "Mace",
+          "type": "radiant",
+          "roll": "4d8"
+        }
       }
     }
   ],
-  "attacksDC": [],
-  "healing": [],
+  "attacksDC": [
+    {
+      "name": "Angelic Weapons",
+      "type": "Magic",
+      "range": "120/120",
+      "roll": "100",
+      "futureUse_icon": "ex_RADIANT",
+      "link": {
+        "name": "Angelic Weapons",
+        "type": "radiant",
+        "roll": "4d8"
+      }
+    }
+  ],
+  "healing": [
+    {
+      "name": "Healing Touch",
+      "type": "Magic",
+      "range": "5/5",
+      "roll": "4d8 + 2"
+    }
+  ],
   "saves": [
     {
       "name": "STR",
@@ -36,12 +61,12 @@
     {
       "name": "DEX",
       "type": "Public",
-      "roll": "1D20+2"
+      "roll": "1D20+4"
     },
     {
       "name": "CON",
       "type": "Public",
-      "roll": "1D20+3"
+      "roll": "1D20+4"
     },
     {
       "name": "INT",
@@ -51,29 +76,29 @@
     {
       "name": "WIS",
       "type": "Public",
-      "roll": "1D20+2"
+      "roll": "1D20+9"
     },
     {
       "name": "CHA",
       "type": "Public",
-      "roll": "1D20+3"
+      "roll": "1D20+9"
     }
   ],
   "skills": [
     {
       "name": "Initiative [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+4"
     },
     {
       "name": "Acrobatics [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+4"
     },
     {
       "name": "Animal Handling [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+5"
     },
     {
       "name": "Arcana [GM]",
@@ -88,7 +113,7 @@
     {
       "name": "Deception [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+6"
+      "roll": "1D20+5"
     },
     {
       "name": "History [GM]",
@@ -98,12 +123,12 @@
     {
       "name": "Insight [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+9"
     },
     {
       "name": "Intimidation [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+5"
     },
     {
       "name": "Investigation [GM]",
@@ -113,7 +138,7 @@
     {
       "name": "Medicine [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+5"
     },
     {
       "name": "Nature [GM]",
@@ -123,17 +148,17 @@
     {
       "name": "Perception [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+9"
     },
     {
       "name": "Performance [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+5"
     },
     {
       "name": "Persuasion [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+3"
+      "roll": "1D20+5"
     },
     {
       "name": "Religion [GM]",
@@ -143,22 +168,24 @@
     {
       "name": "Sleight of Hand [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+4"
     },
     {
       "name": "Stealth [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+5"
+      "roll": "1D20+4"
     },
     {
       "name": "Survival [GM]",
       "type": "Secret,GM",
-      "roll": "1D20+2"
+      "roll": "1D20+5"
     }
   ],
   "resistance": [
-    "cold",
-    "fire"
+    "radiant",
+    "bludgeoning",
+    "piercing",
+    "slashing"
   ],
   "vulnerability": [],
   "immunity": []
