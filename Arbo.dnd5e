@@ -160,27 +160,8 @@
       "name": "Survival",
       "type": "Public",
       "roll": "1D20+{wis}"
-    },
-    {
-      "name": "Deception GM",
-      "type": "Secret,GM",
-      "roll": "1D20+{cha}"
-    },
-    {
-      "name": "Sleight of Hand GM",
-      "type": "Secret,GM",
-      "roll": "1D20+{dex}"
-    },
-    {
-      "name": "Stealth GM",
-      "type": "Secret,GM",
-      "roll": "1D20+{dex}"
-    },
-    {
-      "name": "Insight GM",
-      "type": "Secret,GM",
-      "roll": "1D20+{wis}"
     }
+    
   ],
   "healing": [
     {
@@ -193,4 +174,5 @@
   "resistance": [],
   "vulnerability": [],
   "immunity": []
+
 }
