@@ -176,10 +176,11 @@
       "name": "Second Wind",
       "type": "Magic",
       "roll": "1D10+4",
-      "range": "5/5"
+      "range": "0/0"
     }
   ],
   "resistance": [],
   "vulnerability": [],
   "immunity": []
+
 }
