@@ -269,7 +269,7 @@
       "roll": "1D20+{cha}+{pb}"
     }
   ],
-  "Fähigkeiten": [
+  "skills": [
     {
       "name": "Initiative",
       "type": "Public",
@@ -296,7 +296,7 @@
       "roll": "1D20+{str}"
     },
     {
-      "name": "Täuschen",
+      "name": "Tauuschen",
       "type": "Public",
       "roll": "1D20+{cha}+{pb}"
     },
@@ -311,7 +311,7 @@
       "roll": "1D20+{wis}"
     },
     {
-      "name": "Einschüchtern",
+      "name": "Einschuechtern",
       "type": "Public",
       "roll": "1D20+{cha}+{pb}"
     },
@@ -341,7 +341,7 @@
       "roll": "1D20+{cha}+{pb}"
     },
     {
-      "name": "Überzeugen",
+      "name": "Ueberzeugen",
       "type": "Public",
       "roll": "1D20+{cha}+{pb}"
     },
@@ -361,7 +361,7 @@
       "roll": "1D20+{dex}"
     },
     {
-      "name": "Überleben",
+      "name": "Ueberleben",
       "type": "Public",
       "roll": "1D20+{wis}"
     }
@@ -372,3 +372,4 @@
   "immunity": []
 
 }
+
