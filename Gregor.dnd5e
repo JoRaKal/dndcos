@@ -269,79 +269,79 @@
       "roll": "1D20+{cha}+{pb}"
     }
   ],
-  "skills": [
+  "Fähigkeiten": [
     {
       "name": "Initiative",
       "type": "Public",
       "roll": "1D20+{dex}"
     },
     {
-      "name": "Acrobatics",
+      "name": "Akrobatik",
       "type": "Public",
       "roll": "1D20+{dex}"
     },
     {
-      "name": "Animal Handling",
+      "name": "Mit Tieren umg.",
       "type": "Public",
       "roll": "1D20+{wis}"
     },
     {
-      "name": "Arcana",
+      "name": "Arkane Kunde",
       "type": "Public",
       "roll": "1D20+{int}"
     },
     {
-      "name": "Athletics",
+      "name": "Athletik",
       "type": "Public",
       "roll": "1D20+{str}"
     },
     {
-      "name": "Deception",
+      "name": "Täuschen",
       "type": "Public",
       "roll": "1D20+{cha}+{pb}"
     },
     {
-      "name": "History",
+      "name": "Geschichte",
       "type": "Public",
       "roll": "1D20+{int}+{pb}"
     },
     {
-      "name": "Insight",
+      "name": "Motiv erkennen",
       "type": "Public",
       "roll": "1D20+{wis}"
     },
     {
-      "name": "Intimidation",
+      "name": "Einschüchtern",
       "type": "Public",
       "roll": "1D20+{cha}+{pb}"
     },
     {
-      "name": "Investigation",
+      "name": "Nachforschung",
       "type": "Public",
       "roll": "1D20+{int}"
     },
     {
-      "name": "Medicine",
+      "name": "Heilkunde",
       "type": "Public",
       "roll": "1D20+{wis}"
     },
     {
-      "name": "Nature",
+      "name": "Natur",
       "type": "Public",
       "roll": "1D20+{int}"
     },
     {
-      "name": "Perception",
+      "name": "Wahrnehmung",
       "type": "Public",
       "roll": "1D20+{wis}"
     },
     {
-      "name": "Performance",
+      "name": "Auftreten",
       "type": "Public",
       "roll": "1D20+{cha}+{pb}"
     },
     {
-      "name": "Persuasion",
+      "name": "Überzeugen",
       "type": "Public",
       "roll": "1D20+{cha}+{pb}"
     },
@@ -351,38 +351,18 @@
       "roll": "1D20+{int}"
     },
     {
-      "name": "Sleight of Hand",
+      "name": "Fingerfertigkeit",
       "type": "Public",
       "roll": "1D20+{dex}+{pb}"
     },
     {
-      "name": "Stealth",
+      "name": "Heimlichkeit",
       "type": "Public",
       "roll": "1D20+{dex}"
     },
     {
-      "name": "Survival",
+      "name": "Überleben",
       "type": "Public",
-      "roll": "1D20+{wis}"
-    },
-    {
-      "name": "Deception GM",
-      "type": "Secret,GM",
-      "roll": "1D20+{cha}"
-    },
-    {
-      "name": "Sleight of Hand GM",
-      "type": "Secret,GM",
-      "roll": "1D20+{dex}"
-    },
-    {
-      "name": "Stealth GM",
-      "type": "Secret,GM",
-      "roll": "1D20+{dex}"
-    },
-    {
-      "name": "Insight GM",
-      "type": "Secret,GM",
       "roll": "1D20+{wis}"
     }
   ],
@@ -390,4 +370,5 @@
   "resistance": [],
   "vulnerability": [],
   "immunity": []
+
 }
