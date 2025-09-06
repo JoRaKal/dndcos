@@ -11,7 +11,7 @@
   "cha": "18",
   "speed": "30",
   "lv": "4",
-  "Angriffswürfe": [
+  "attacks": [
     {
       "name": "Dolch",
       "type": "Melee",
@@ -139,7 +139,7 @@
       }
     }
   ],
-  "Angriffe mit SG": [
+  "attacksDC": [
     {
       "name": "Donnerschlag",
       "type": "Magic",
@@ -239,32 +239,32 @@
   ],
   "saves": [
     {
-      "name": "Stärke",
+      "name": "STR",
       "type": "Public",
       "roll": "1D20+{str}"
     },
     {
-      "name": "Geschick",
+      "name": "DEX",
       "type": "Public",
       "roll": "1D20+{dex}"
     },
     {
-      "name": "Konstitution",
+      "name": "CON",
       "type": "Public",
       "roll": "1D20+{con}+{pb}"
     },
     {
-      "name": "Intelligenz",
+      "name": "INT",
       "type": "Public",
       "roll": "1D20+{int}"
     },
     {
-      "name": "Weisheit",
+      "name": "WIS",
       "type": "Public",
       "roll": "1D20+{wis}"
     },
     {
-      "name": "Charisma",
+      "name": "CHA",
       "type": "Public",
       "roll": "1D20+{cha}+{pb}"
     }
@@ -372,4 +372,5 @@
   "immunity": []
 
 }
+
 
