@@ -1,0 +1,363 @@
+{
+  "NPC": false,
+  "reach": 5,
+  "ac": "12",
+  "hp": "29",
+  "str": "10",
+  "dex": "14",
+  "con": "16",
+  "Int": "20",
+  "wis": "13",
+  "cha": "7",
+  "speed": "30",
+  "lv": "4",
+  "attacks": [
+    {
+      "name": "Ice Knife",
+      "type": "Magic",
+      "roll": "1D20+{pb}+{int}",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "range": "60/60",
+      "futureUse_icon": "ex_MAGIC_PIERCING",
+      "link": {
+        "name": "Ice Knife",
+        "type": "magic piercing",
+        "roll": "1d10"
+      }
+    },
+    {
+      "name": "Ice Knife (in zone)",
+      "type": "Magic",
+      "roll": "1D20+{pb}+{int}",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "range": "60/60",
+      "futureUse_icon": "ex_COLD",
+      "link": {
+        "name": "Ice Knife",
+        "type": "cold",
+        "roll": "2d6"
+      }
+    },
+    {
+      "name": "Ray of Frost",
+      "type": "Magic",
+      "roll": "1D20+{pb}+{int}",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "range": "60/60",
+      "futureUse_icon": "ex_COLD",
+      "link": {
+        "name": "Ray of Frost",
+        "type": "cold",
+        "roll": "1d8"
+      }
+    },
+    {
+      "name": "Melf's Acid Arrow",
+      "type": "Magic",
+      "roll": "1D20+{pb}+{int}",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "range": "90/90",
+      "futureUse_icon": "ex_ACID",
+      "link": {
+        "name": "Melf's Acid Arrow",
+        "type": "acid",
+        "roll": "4d4"
+      }
+    },
+    {
+      "name": "TS Staff Bludg.",
+      "type": "Melee",
+      "roll": "1D20+{int}+{pb}",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "range": "5/5",
+      "link": {
+        "name": "Staff",
+        "type": "bludgeoning",
+        "roll": "1D8+5"
+      }
+    },
+    {
+      "name": "TS Staff Radiant",
+      "type": "Melee",
+      "roll": "1D20+{int}+{pb}",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "range": "5/5",
+      "link": {
+        "name": "Staff",
+        "type": "radiant",
+        "roll": "1D8+5"
+      }
+    },
+    {
+      "name": "Chill Touch",
+      "type": "Magic",
+      "roll": "1D20+{pb}+{int}",
+      "critrangemin": "20",
+      "critmultip": "2",
+      "range": "5/5",
+      "futureUse_icon": "ex_NECROTIC",
+      "link": {
+        "name": "Chill Touch",
+        "type": "necrotic",
+        "roll": "1d10"
+      }
+    }
+  ],
+  "attacksDC": [
+    {
+      "name": "Mind Spike",
+      "type": "Magic",
+      "roll": "8+{pb}+{int}/WIS/half",
+      "range": "120/120",
+      "futureUse_icon": "ex_PSYCHIC",
+      "link": {
+        "name": "Mind Spike",
+        "type": "psychic",
+        "roll": "3d8"
+      }
+    },
+    {
+      "name": "Hold Person",
+      "type": "Magic",
+      "roll": "8+{pb}+{int}/WIS/zero",
+      "range": "60/60",
+      "futureUse_icon": "_Magic",
+      "link": {
+        "name": "Hold Person",
+        "type": "",
+        "roll": "0"
+      }
+    },
+    {
+      "name": "Snilloc's Snowball Swarm",
+      "type": "Magic",
+      "roll": "8+{pb}+{int}/DEX/half",
+      "range": "90/90",
+      "futureUse_icon": "ex_COLD",
+      "link": {
+        "name": "Snilloc's Snowball Swarm",
+        "type": "cold",
+        "roll": "3d6"
+      }
+    },
+    {
+      "name": "Melf's Acid Arrow (end turn)",
+      "type": "Magic",
+      "roll": "100",
+      "range": "120/120",
+      "futureUse_icon": "ex_ACID",
+      "link": {
+        "name": "Melf's Acid Arrow",
+        "type": "acid",
+        "roll": "2d4"
+      }
+    },
+    {
+      "name": "Magic Missile",
+      "type": "Magic",
+      "roll": "100",
+      "range": "120/120",
+      "futureUse_icon": "ex_FORCE",
+      "link": {
+        "name": "Magic Missile",
+        "type": "force",
+        "roll": "1d4+1"
+      }
+    },
+    {
+      "name": "Catapult",
+      "type": "Magic",
+      "roll": "8+{pb}+{int}/DEX/zero",
+      "range": "60/60",
+      "futureUse_icon": "ex_MAGIC_BLUDGEONING",
+      "link": {
+        "name": "Catapult",
+        "type": "magic bludgeoning",
+        "roll": "3d8"
+      }
+    },
+    {
+      "name": "Toll the Dead",
+      "type": "Magic",
+      "roll": "8+{pb}+{int}/WIS/zero",
+      "range": "60/60",
+      "futureUse_icon": "ex_NECROTIC",
+      "link": {
+        "name": "Toll the Dead",
+        "type": "necrotic",
+        "roll": "1d8"
+      }
+    },
+    {
+      "name": "Toll the Dead (Injured)",
+      "type": "Magic",
+      "roll": "8+{pb}+{int}/WIS/zero",
+      "range": "60/60",
+      "futureUse_icon": "ex_NECROTIC",
+      "link": {
+        "name": "Toll the Dead",
+        "type": "necrotic",
+        "roll": "1d12"
+      }
+    }
+  ],
+  "saves": [
+    {
+      "name": "STR",
+      "type": "Public",
+      "roll": "1D20+{str}"
+    },
+    {
+      "name": "DEX",
+      "type": "Public",
+      "roll": "1D20+{dex}"
+    },
+    {
+      "name": "CON",
+      "type": "Public",
+      "roll": "1D20+{con}"
+    },
+    {
+      "name": "INT",
+      "type": "Public",
+      "roll": "1D20+{int}+{pb}"
+    },
+    {
+      "name": "WIS",
+      "type": "Public",
+      "roll": "1D20+{wis}+{pb}"
+    },
+    {
+      "name": "CHA",
+      "type": "Public",
+      "roll": "1D20+{cha}"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Initiative",
+      "type": "Public",
+      "roll": "1D20+{dex}"
+    },
+    {
+      "name": "Acrobatics",
+      "type": "Public",
+      "roll": "1D20+{dex}"
+    },
+    {
+      "name": "Animal Handling",
+      "type": "Public",
+      "roll": "1D20+{wis}"
+    },
+    {
+      "name": "Arcana",
+      "type": "Public",
+      "roll": "1D20+{int}+{ex}"
+    },
+    {
+      "name": "Athletics",
+      "type": "Public",
+      "roll": "1D20+{str}"
+    },
+    {
+      "name": "Deception",
+      "type": "Public",
+      "roll": "1D20+{cha}"
+    },
+    {
+      "name": "History",
+      "type": "Public",
+      "roll": "1D20+{int}+{pb}"
+    },
+    {
+      "name": "Insight",
+      "type": "Public",
+      "roll": "1D20+{wis}"
+    },
+    {
+      "name": "Intimidation",
+      "type": "Public",
+      "roll": "1D20+{cha}"
+    },
+    {
+      "name": "Investigation",
+      "type": "Public",
+      "roll": "1D20+{int}+{pb}"
+    },
+    {
+      "name": "Medicine",
+      "type": "Public",
+      "roll": "1D20+{wis}"
+    },
+    {
+      "name": "Nature",
+      "type": "Public",
+      "roll": "1D20+{int}+{pb}"
+    },
+    {
+      "name": "Perception",
+      "type": "Public",
+      "roll": "1D20+{wis}"
+    },
+    {
+      "name": "Performance",
+      "type": "Public",
+      "roll": "1D20+{cha}"
+    },
+    {
+      "name": "Persuasion",
+      "type": "Public",
+      "roll": "1D20+{cha}"
+    },
+    {
+      "name": "Religion",
+      "type": "Public",
+      "roll": "1D20+{int}"
+    },
+    {
+      "name": "Sleight of Hand",
+      "type": "Public",
+      "roll": "1D20+{dex}"
+    },
+    {
+      "name": "Stealth",
+      "type": "Public",
+      "roll": "1D20+{dex}"
+    },
+    {
+      "name": "Survival",
+      "type": "Public",
+      "roll": "1D20+{wis}"
+    },
+    {
+      "name": "Deception GM",
+      "type": "Secret,GM",
+      "roll": "1D20+{cha}"
+    },
+    {
+      "name": "Sleight of Hand GM",
+      "type": "Secret,GM",
+      "roll": "1D20+{dex}"
+    },
+    {
+      "name": "Stealth GM",
+      "type": "Secret,GM",
+      "roll": "1D20+{dex}"
+    },
+    {
+      "name": "Insight GM",
+      "type": "Secret,GM",
+      "roll": "1D20+{wis}"
+    }
+  ],
+  "healing": [],
+  "resistance": [],
+  "vulnerability": [],
+  "immunity": []
+}
