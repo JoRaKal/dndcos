@@ -11,9 +11,9 @@
   "cha": "18",
   "speed": "30",
   "lv": "4",
-  "attacks": [
+  "Angriffswürfe": [
     {
-      "name": "Dagger",
+      "name": "Dolch",
       "type": "Melee",
       "roll": "1D20+{dex}+{pb}",
       "critrangemin": "20",
@@ -27,7 +27,7 @@
       }
     },
     {
-      "name": "Poison Spray",
+      "name": "Gift versprühen",
       "type": "Magic",
       "roll": "1D20+{cha}+{pb}",
       "critrangemin": "20",
@@ -41,7 +41,7 @@
       }
     },
     {
-      "name": "Sorcerous Burst (cold)",
+      "name": "EdZ(Kälte)",
       "type": "Magic",
       "roll": "1D20+{pb}+{cha}",
       "critrangemin": "20",
@@ -55,7 +55,7 @@
       }
     },
     {
-      "name": "Sorcerous Burst (fire)",
+      "name": "EdZ(Feuer)",
       "type": "Magic",
       "roll": "1D20+{pb}+{cha}",
       "critrangemin": "20",
@@ -69,7 +69,7 @@
       }
     },
     {
-      "name": "Sorcerous Burst (lightning)",
+      "name": "EdZ(Blitz)",
       "type": "Magic",
       "roll": "1D20+{pb}+{cha}",
       "critrangemin": "20",
@@ -83,7 +83,7 @@
       }
     },
     {
-      "name": "Sorcerous Burst (poison)",
+      "name": "EdZ(Gift)",
       "type": "Magic",
       "roll": "1D20+{pb}+{cha}",
       "critrangemin": "20",
@@ -97,7 +97,7 @@
       }
     },
     {
-      "name": "Sorcerous Burst (psychic)",
+      "name": "EdZ(Psychisch)",
       "type": "Magic",
       "roll": "1D20+{pb}+{cha}",
       "critrangemin": "20",
@@ -111,7 +111,7 @@
       }
     },
     {
-      "name": "Sorcerous Burst (acid)",
+      "name": "EdZ(Säure)",
       "type": "Magic",
       "roll": "1D20+{pb}+{cha}",
       "critrangemin": "20",
@@ -125,7 +125,7 @@
       }
     },
     {
-      "name": "Sorcerous Burst (thunder)",
+      "name": "EdZ(Donner)",
       "type": "Magic",
       "roll": "1D20+{pb}+{cha}",
       "critrangemin": "20",
@@ -139,9 +139,9 @@
       }
     }
   ],
-  "attacksDC": [
+  "Angriffe mit SG": [
     {
-      "name": "Thunderclap",
+      "name": "Donnerschlag",
       "type": "Magic",
       "roll": "8+{pb}+{cha}/CON/zero",
       "range": "5/5",
@@ -153,7 +153,7 @@
       }
     },
     {
-      "name": "Mind Sliver",
+      "name": "Gedankensplitter",
       "type": "Magic",
       "roll": "8+{pb}+{cha}/INT/zero",
       "range": "60/60",
@@ -165,7 +165,7 @@
       }
     },
     {
-      "name": "Arms of Hadar",
+      "name": "Arme von Hadar",
       "type": "Magic",
       "roll": "8+{pb}+{cha}/STR/half",
       "range": "10/10",
@@ -177,7 +177,7 @@
       }
     },
     {
-      "name": "Calm Emotions",
+      "name": "Gefühle besänftigen",
       "type": "Magic",
       "roll": "8+{pb}+{cha}/CHA/zero",
       "range": "60/60",
@@ -189,7 +189,7 @@
       }
     },
     {
-      "name": "Crown of Madness",
+      "name": "Krone des Wahnsinns",
       "type": "Magic",
       "roll": "8+{pb}+{cha}/WIS/zero",
       "range": "120/120",
@@ -201,7 +201,7 @@
       }
     },
     {
-      "name": "Dissonant Whispers",
+      "name": "Dissonantes Flüstern",
       "type": "Magic",
       "roll": "8+{pb}+{cha}/WIS/half",
       "range": "60/60",
@@ -213,7 +213,7 @@
       }
     },
     {
-      "name": "Hold Person",
+      "name": "Person festhalten",
       "type": "Magic",
       "roll": "8+{pb}+{cha}/WIS/zero",
       "range": "60/60",
@@ -225,7 +225,7 @@
       }
     },
     {
-      "name": "Thunderwave",
+      "name": "Donnerwelle",
       "type": "Magic",
       "roll": "8+{pb}+{cha}/CON/half",
       "range": "15/15",
@@ -239,32 +239,32 @@
   ],
   "saves": [
     {
-      "name": "STR",
+      "name": "Stärke",
       "type": "Public",
       "roll": "1D20+{str}"
     },
     {
-      "name": "DEX",
+      "name": "Geschick",
       "type": "Public",
       "roll": "1D20+{dex}"
     },
     {
-      "name": "CON",
+      "name": "Konstitution",
       "type": "Public",
       "roll": "1D20+{con}+{pb}"
     },
     {
-      "name": "INT",
+      "name": "Intelligenz",
       "type": "Public",
       "roll": "1D20+{int}"
     },
     {
-      "name": "WIS",
+      "name": "Weisheit",
       "type": "Public",
       "roll": "1D20+{wis}"
     },
     {
-      "name": "CHA",
+      "name": "Charisma",
       "type": "Public",
       "roll": "1D20+{cha}+{pb}"
     }
@@ -296,7 +296,7 @@
       "roll": "1D20+{str}"
     },
     {
-      "name": "Tauuschen",
+      "name": "Täuschen",
       "type": "Public",
       "roll": "1D20+{cha}+{pb}"
     },
@@ -311,7 +311,7 @@
       "roll": "1D20+{wis}"
     },
     {
-      "name": "Einschuechtern",
+      "name": "Einschüchtern",
       "type": "Public",
       "roll": "1D20+{cha}+{pb}"
     },
@@ -341,7 +341,7 @@
       "roll": "1D20+{cha}+{pb}"
     },
     {
-      "name": "Ueberzeugen",
+      "name": "Überzeugen",
       "type": "Public",
       "roll": "1D20+{cha}+{pb}"
     },
@@ -361,7 +361,7 @@
       "roll": "1D20+{dex}"
     },
     {
-      "name": "Ueberleben",
+      "name": "Überleben",
       "type": "Public",
       "roll": "1D20+{wis}"
     }
