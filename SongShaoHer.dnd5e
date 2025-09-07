@@ -59,7 +59,7 @@
     {
       "name": "Toll the Dead Healthy",
       "type": "Magic",
-      "roll": "8+{pb}/WIS/zero",
+      "roll": "8+5+{pb}/WIS/zero",
       "range": "60/60",
       "futureUse_icon": "ex_NECROTIC",
       "link": {
@@ -71,7 +71,7 @@
     {
       "name": "Toll the Dead Injured",
       "type": "Magic",
-      "roll": "8+{pb}/WIS/zero",
+      "roll": "8+5+{pb}/WIS/zero",
       "range": "60/60",
       "futureUse_icon": "ex_NECROTIC",
       "link": {
@@ -83,7 +83,7 @@
     {
       "name": "Command",
       "type": "Magic",
-      "roll": "8+{pb}/WIS/zero",
+      "roll": "8+5+{pb}/WIS/zero",
       "range": "60/60",
       "futureUse_icon": "ex_PSYCHIC",
       "link": {
@@ -95,7 +95,7 @@
     {
       "name": "Shatter",
       "type": "Magic",
-      "roll": "8+{pb}/CON/half",
+      "roll": "8+5+{pb}/CON/half",
       "range": "60/60",
       "futureUse_icon": "ex_THUNDER",
       "link": {
@@ -270,4 +270,5 @@
   "resistance": [],
   "vulnerability": [],
   "immunity": []
+
 }
