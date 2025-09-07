@@ -1,22 +1,24 @@
 {
   "NPC": true,
-  "hp": "112",
+  "reach": 5,
   "ac": "17",
-  "speed": "30",
+  "hp": "112",
   "str": "18",
   "dex": "15",
   "con": "16",
   "Int": "16",
   "wis": "14",
   "cha": "16",
+  "speed": "30",
+  "lv": "5",
   "attacks": [
     {
       "name": "Claws",
       "type": "Melee",
-      "range": "5/5",
       "roll": "1D20+7",
       "critrangemin": "20",
       "critmultip": "2",
+      "range": "5/5",
       "futureUse_icon": "e_CLAW",
       "link": {
         "name": "Claws",
@@ -25,8 +27,44 @@
       }
     }
   ],
-  "attacksDC": [],
-  "healing": [],
+  "attacksDC": [
+    {
+      "name": "Magic Missile",
+      "type": "Magic",
+      "roll": "100",
+      "range": "120/120",
+      "futureUse_icon": "ex_FORCE",
+      "link": {
+        "name": "Magic Missile",
+        "type": "force",
+        "roll": "1d4+1"
+      }
+    },
+    {
+      "name": "Ray of Enfeeblement",
+      "type": "Magic",
+      "roll": "8+{pb}+{cha}/CON/zero",
+      "range": "60/60",
+      "futureUse_icon": "_Magic",
+      "link": {
+        "name": "Ray of Enfeeblement",
+        "type": "",
+        "roll": "0"
+      }
+    },
+    {
+      "name": "Sleep",
+      "type": "Magic",
+      "roll": "8+{pb}+{cha}/WIS/zero",
+      "range": "60/60",
+      "futureUse_icon": "_Magic",
+      "link": {
+        "name": "Sleep",
+        "type": "",
+        "roll": "0"
+      }
+    }
+  ],
   "saves": [
     {
       "name": "STR",
@@ -156,6 +194,7 @@
       "roll": "1D20+2"
     }
   ],
+  "healing": [],
   "resistance": [
     "cold",
     "fire",
