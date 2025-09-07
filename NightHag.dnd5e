@@ -25,7 +25,32 @@
       }
     }
   ],
-  "attacksDC": [],
+  "attacksDC": [
+    {
+      "name": "Magic Missile",
+      "type": "Magic",
+      "range": "120/120",
+      "roll": "100",
+      "futureUse_icon": "ex_FORCE",
+      "link": {
+        "name": "Magic Missile",
+        "type": "force",
+        "roll": "1d4+1"
+      }
+    },
+    {
+      "name": "Phantasmal Killer",
+      "type": "Magic",
+      "range": "120/120",
+      "roll": "14/WIS/half",
+      "futureUse_icon": "ex_PSYCHIC",
+      "link": {
+        "name": "Phantasmal Killer",
+        "type": "psychic",
+        "roll": "4d10"
+      }
+    }
+  ],
   "healing": [],
   "saves": [
     {
