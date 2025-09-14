@@ -15,7 +15,7 @@
     {
       "name": "True Strike Dagger",
       "type": "Melee",
-      "roll": "1D20+7",
+      "roll": "1D20+{cha}+{pb}",
       "critrangemin": "20",
       "critmultip": "2",
       "range": "20/60",
@@ -29,7 +29,7 @@
     {
       "name": "True Strike Staff",
       "type": "Melee",
-      "roll": "1D20+5+{pb}",
+      "roll": "1D20+{cha}+{pb}",
       "critrangemin": "20",
       "critmultip": "2",
       "range": "5/5",
@@ -43,7 +43,7 @@
     {
       "name": "Bardic Unarmed Attack",
       "type": "Melee",
-      "roll": "1D20+5+{pb}",
+      "roll": "1D20+{cha}+{pb}",
       "critrangemin": "20",
       "critmultip": "2",
       "range": "5/5",
@@ -59,7 +59,7 @@
     {
       "name": "Toll the Dead Healthy",
       "type": "Magic",
-      "roll": "8+5+{pb}/WIS/zero",
+      "roll": "8+{cha}+{pb}/WIS/zero",
       "range": "60/60",
       "futureUse_icon": "ex_NECROTIC",
       "link": {
@@ -71,7 +71,7 @@
     {
       "name": "Toll the Dead Injured",
       "type": "Magic",
-      "roll": "8+5+{pb}/WIS/zero",
+      "roll": "8+{cha}+{pb}/WIS/zero",
       "range": "60/60",
       "futureUse_icon": "ex_NECROTIC",
       "link": {
@@ -83,7 +83,7 @@
     {
       "name": "Command",
       "type": "Magic",
-      "roll": "8+5+{pb}/WIS/zero",
+      "roll": "8+{cha}+{pb}/WIS/zero",
       "range": "60/60",
       "futureUse_icon": "ex_PSYCHIC",
       "link": {
@@ -95,7 +95,7 @@
     {
       "name": "Shatter",
       "type": "Magic",
-      "roll": "8+5+{pb}/CON/half",
+      "roll": "8+{cha}+{pb}/CON/half",
       "range": "60/60",
       "futureUse_icon": "ex_THUNDER",
       "link": {
@@ -109,32 +109,32 @@
     {
       "name": "STR",
       "type": "Public",
-      "roll": "1D20-1"
+      "roll": "1D20+{str}"
     },
     {
       "name": "DEX",
       "type": "Public",
-      "roll": "1D20+3+{pb}"
+      "roll": "1D20+{dex}+{pb}"
     },
     {
       "name": "CON",
       "type": "Public",
-      "roll": "1D20+2"
+      "roll": "1D20+{con}"
     },
     {
       "name": "INT",
       "type": "Public",
-      "roll": "1D20+2"
+      "roll": "1D20+{int}"
     },
     {
       "name": "WIS",
       "type": "Public",
-      "roll": "1D20+2"
+      "roll": "1D20+{wis}"
     },
     {
       "name": "CHA",
       "type": "Public",
-      "roll": "1D20+5+{pb}"
+      "roll": "1D20+{cha}+{pb}"
     }
   ],
   "skills": [
@@ -270,5 +270,4 @@
   "resistance": [],
   "vulnerability": [],
   "immunity": []
-
 }
