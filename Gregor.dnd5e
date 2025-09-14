@@ -367,10 +367,13 @@
     }
   ],
   "healing": [],
-  "resistance": [],
+  "resistance": [
+    "poison"
+  ],
   "vulnerability": [],
   "immunity": []
 
 }
+
 
 
