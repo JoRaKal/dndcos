@@ -251,7 +251,7 @@
   ],
   "healing": [
     {
-      "name": "Cure WoundsR",
+      "name": "Cure Wounds",
       "type": "Magic",
       "roll": "2D8+5",
       "range": "5/5"
@@ -268,5 +268,6 @@
   "immunity": []
 
 }
+
 
 
