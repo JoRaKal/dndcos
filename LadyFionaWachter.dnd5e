@@ -1,22 +1,23 @@
 {
   "NPC": true,
-  "hp": "27",
+  "reach": 5,
   "ac": "10",
-  "speed": "30",
+  "hp": "27",
   "str": "10",
   "dex": "10",
   "con": "12",
   "Int": "13",
   "wis": "16",
   "cha": "13",
+  "speed": "30",
   "attacks": [
     {
       "name": "Mace",
       "type": "Melee",
-      "range": "5/5",
       "roll": "1D20+2",
       "critrangemin": "20",
       "critmultip": "2",
+      "range": "5/5",
       "futureUse_icon": "ex_BLUDGEONING",
       "link": {
         "name": "Mace",
@@ -29,8 +30,8 @@
     {
       "name": "Divine Eminence",
       "type": "Magic",
-      "range": "120/120",
       "roll": "100",
+      "range": "120/120",
       "futureUse_icon": "ex_RADIANT",
       "link": {
         "name": "Divine Eminence",
@@ -41,17 +42,28 @@
     {
       "name": "Hold Person",
       "type": "Magic",
-      "range": "60/60",
       "roll": "13/WIS/zero",
+      "range": "60/60",
       "futureUse_icon": "_Magic",
       "link": {
         "name": "Hold Person",
         "type": "",
         "roll": "0"
       }
+    },
+    {
+      "name": "Command",
+      "type": "Magic",
+      "roll": "8+{pb}+{wis}/WIS/zero",
+      "range": "60/60",
+      "futureUse_icon": "_Magic",
+      "link": {
+        "name": "Command",
+        "type": "",
+        "roll": "0"
+      }
     }
   ],
-  "healing": [],
   "saves": [
     {
       "name": "STR",
@@ -181,6 +193,7 @@
       "roll": "1D20+3"
     }
   ],
+  "healing": [],
   "resistance": [],
   "vulnerability": [],
   "immunity": []
