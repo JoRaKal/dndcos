@@ -254,11 +254,7 @@
       "name": "Cure Wounds",
       "type": "Magic",
       "roll": "2D8+5",
-      "link": {
-        "name": "Song Of Rest",
-        "type": "Song",
-        "roll": "1D6"
-      }
+      "range": "60/60"
     },
     {
       "name": "Healing Word",
@@ -270,4 +266,5 @@
   "resistance": [],
   "vulnerability": [],
   "immunity": []
+
 }
