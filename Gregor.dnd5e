@@ -143,7 +143,7 @@
     {
       "name": "Donnerschlag",
       "type": "Magic",
-      "roll": "8+{pb}+{cha}/CON/zero",
+      "roll": "9+{pb}+{cha}/CON/zero",
       "range": "5/5",
       "futureUse_icon": "ex_THUNDER",
       "link": {
@@ -155,7 +155,7 @@
     {
       "name": "Gedankensplitter",
       "type": "Magic",
-      "roll": "8+{pb}+{cha}/INT/zero",
+      "roll": "9+{pb}+{cha}/INT/zero",
       "range": "60/60",
       "futureUse_icon": "ex_PSYCHIC",
       "link": {
@@ -167,7 +167,7 @@
     {
       "name": "Arme von Hadar",
       "type": "Magic",
-      "roll": "8+{pb}+{cha}/STR/half",
+      "roll": "9+{pb}+{cha}/STR/half",
       "range": "10/10",
       "futureUse_icon": "ex_NECROTIC",
       "link": {
@@ -179,7 +179,7 @@
     {
       "name": "Gefühle besänftigen",
       "type": "Magic",
-      "roll": "8+{pb}+{cha}/CHA/zero",
+      "roll": "9+{pb}+{cha}/CHA/zero",
       "range": "60/60",
       "futureUse_icon": "ex_PSYCHIC",
       "link": {
@@ -191,7 +191,7 @@
     {
       "name": "Krone des Wahnsinns",
       "type": "Magic",
-      "roll": "8+{pb}+{cha}/WIS/zero",
+      "roll": "9+{pb}+{cha}/WIS/zero",
       "range": "120/120",
       "futureUse_icon": "_Magic",
       "link": {
@@ -203,7 +203,7 @@
     {
       "name": "Dissonantes Flüstern",
       "type": "Magic",
-      "roll": "8+{pb}+{cha}/WIS/half",
+      "roll": "9+{pb}+{cha}/WIS/half",
       "range": "60/60",
       "futureUse_icon": "ex_PSYCHIC",
       "link": {
@@ -215,7 +215,7 @@
     {
       "name": "Person festhalten",
       "type": "Magic",
-      "roll": "8+{pb}+{cha}/WIS/zero",
+      "roll": "9+{pb}+{cha}/WIS/zero",
       "range": "60/60",
       "futureUse_icon": "e_ESCAPE",
       "link": {
@@ -227,7 +227,7 @@
     {
       "name": "Donnerwelle",
       "type": "Magic",
-      "roll": "8+{pb}+{cha}/CON/half",
+      "roll": "9+{pb}+{cha}/CON/half",
       "range": "15/15",
       "futureUse_icon": "ex_THUNDER",
       "link": {
@@ -374,6 +374,7 @@
   "immunity": []
 
 }
+
 
 
 
