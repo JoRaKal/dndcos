@@ -39,7 +39,14 @@
       }
     }
   ],
-  "healing": [],
+  "healing": [
+    {
+      "name": "Cure Wounds",
+      "type": "Magic",
+      "roll": "2D8+4",
+      "range": "5/5"
+    }
+  ],
   "saves": [
     {
       "name": "STR",
@@ -172,4 +179,5 @@
   "resistance": [],
   "vulnerability": [],
   "immunity": []
+
 }
